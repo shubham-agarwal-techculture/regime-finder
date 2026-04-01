@@ -54,11 +54,11 @@ pip install -e .
 Update the database connection parameters in `main.py`:
 
 ```python
-engine = create_engine("postgresql+psycopg2://admin:quest@hostip/qdb")
+engine = create_engine("postgresql+psycopg2://admin:quest@<HOST IP>/qdb")
 ```
 
 Modify the following as needed:
-- **Host**: Database server IP (default: Host IP)
+- **Host**: Database server IP (default: <Host IP>)
 - **Port**: QuestDB PostgreSQL port (default: 8812)
 - **User**: Database username (default: admin)
 - **Password**: Database password (default: quest)
